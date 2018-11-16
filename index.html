@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sats Admin</title>
+    <!-- External links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- internal links -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="fluid-container ">
+        
+        <div class="row mr-0">
+            <div class="col-lg-12 d-flex header-content pr-0 ">
+                <div class="logo px-0 col-lg-2 bg-light">
+                    <!-- <img src="./img/logo.jpg" alt="logo"> -->
+                </div>
+                <div class="title col-lg-8 mt-4">
+                    <h5 class="font-weight-light mb-0">Admin</h5>
+                    <p>News & Events / Management Events</p>
+                    <i class="fa fa-bell-o"></i>
+                </div>
+                <div class="notifications col-lg-2">
+
+                    <div class="user-info d-flex mt-4">
+                        <div class="notification-wrap">
+                            <div class="notification-number">
+                                5</div>
+                            <i class="fa fa-bell mr-2"></i>
+                            <p> sim siang ju </p>
+                            <img class="rounded-circle profile-img ml-1 dropdown-toggle" src="./img/Profile.png" alt="sim siang ju">
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <section class="page-body">
+            <div class="row  mx-0">
+                <div class=" col-lg-2 side-menu admin-header px-0">
+                    <h6 class="side-title  font-weight-bold"> ADMIN </h6>
+                    <ul class="list-group " id="list-tab" role="tablist">
+                        <li class="pl-3  py-3 font-weight-bold"> <i class="fa fa-user mr-2"></i>User</li>
+                        <li> <a class="list-group-item list-group-item-action " id="vuser-list" data-toggle="list" href="#vuser"
+                                role="tab">View user</a></li>
+                        <li> <a class="list-group-item list-group-item-action" id="cuser-list" data-toggle="list" href="#cuser"
+                                role="tab">Create user</a></li>
+
+                        <li class="pl-3 py-3 font-weight-bold"><i class="fa fa-cog mr-2"></i>System setting</li>
+                        <li> <a class="list-group-item list-group-item-action" id="skillset-list" data-toggle="list"
+                                href="#skillset" role="tab">skill set</a></li>
+                        <li> <a class="list-group-item list-group-item-action" id="Businessunit-list" data-toggle="list"
+                                href="#Businessunit" role="tab">Business unit</a></li>
+                        <li> <a class="list-group-item list-group-item-action" id="userrolls-list" data-toggle="list"
+                                href="#userrolls" role="tab">User rolls</a></li>
+                        <li> <a class="list-group-item list-group-item-action mb-3" id="channel-list" data-toggle="list"
+                                href="#channel" role="tab">Channel</a></li>
+
+
+                        <h6 class="side-title font-weight-bold "> Communication</h6>
+                        <li class="pl-3 py-3 font-weight-bold"> <i class="fa fa-volume-up mr-2 "></i>News & Events</li>
+                        <li> <a class="list-group-item list-group-item-action" id="mynews-list" data-toggle="list" href="#mynews"
+                                role="tab">my news & events</a></li>
+                         <li> <a class="list-group-item list-group-item-action" id="managenews-list"
+                                    data-toggle="list" href="#managenews" role="tab">manage news</a></li>
+                        <li> <a class="list-group-item list-group-item-action active mb-3" id="manageevents-list"
+                                data-toggle="list" href="#manageevents" role="tab">manage events</a></li>
+
+
+                        <li class="pl-3 font-weight-bold"><i class="fa fa-bell mr-2 "></i> notifications </li>
+                        <li> <a class="list-group-item list-group-item-action" id="mynotification-list" data-toggle="list"
+                                href="#mynotification" role="tab">my news & events</a></li>
+                        <li> <a class="list-group-item list-group-item-action" id="managenotification-list" data-toggle="list"
+                                href="#managenotification" role="tab">manage events</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-10 page-content ">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="manageevents" role="tabpanel">
+                            <div class="mt-2 text-center bg-light">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link px-4 active" id="overview-tab" data-toggle="tab" href="#overview"
+                                            role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-5" id="add-tab" data-toggle="tab" href="#add" role="tab"
+                                            aria-controls="add" aria-selected="false">Add </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link px-5" id="status-tab" data-toggle="tab" href="#status" role="tab"
+                                            aria-controls="status" aria-selected="false">status</a>
+                                    </li>
+                                   <li class="ml-auto d-flex flex-column justify-content-center"> <i class="fa fa-cog mr-2"></i>
+                                   </li>
+                                </ul>
+
+                               
+                            </div>
+                            <div class="search-bar">
+                                <form class="form-inline  my-lg-0 d-flex py-4">
+                                   
+                                            <div class="input-group search ">
+                                                    <input type="text" class="form-control" placeholder="search events here..">
+                                                    <div class="input-group-append">
+                                                      <span class="input-group-text "><i class="fa fa-search "></i></span>
+                                                    </div>
+                                                  </div>
+                                                
+                                       
+                                   
+                                    <div class="channel d-flex px-2">
+                                        <label for="selectchannel " class="mx-4">select channel</label>
+                                        <div class="input-group">
+                                            <select class="custom-select" id="">
+                                                <option selected>SATS EVETNS</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="status d-flex">
+                                        <label for="Status" class="mx-4">Status</label>
+                                        <select class="custom-select " id="">
+                                            <option selected>All</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="events-tab ">
+                                <p class="pl-2">Events</p>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="card-body px-4 pt-0" id="overview">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Publish date</th>
+                                                        <th scope="col">Events title</th>
+                                                        <th scope="col">Author Information</th>
+                                                        <th scope="col">Status</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                        <td>lorem ipsum</td>
+                                                        <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                        <td>published</td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-primary  mr-2">View</button>
+                                                            <button class="btn btn-sm btn-success">Edit</button>
+
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                            <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                            <td>lorem ipsum</td>
+                                                            <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                            <td>published</td>
+                                                            <td>
+                                                                <button class="btn btn-sm btn-primary  mr-2">View</button>
+                                                                <button class="btn btn-sm btn-success">Edit</button>
+    
+                                                            </td>
+    
+                                                        </tr>
+                                                        <tr>
+                                                                <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                                <td>lorem ipsum</td>
+                                                                <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                                <td>published</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-primary  mr-2">View</button>
+                                                                    <button class="btn btn-sm btn-success">Edit</button>
+        
+                                                                </td>
+        
+                                                            </tr>
+                                                    <tr>
+                                                        <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                        <td> <span class="draft">{Draft}</span>
+                                                            lorem ipsum</td>
+                                                        <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                        <td>Draft</td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-primary  mr-2">View</button>
+                                                            <button class="btn btn-sm btn-success">Edit</button>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                            <td> <span class="draft">{Draft}</span>
+                                                                lorem ipsum</td>
+                                                            <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                            <td>Draft</td>
+                                                            <td>
+                                                                <button class="btn btn-sm btn-primary  mr-2">View</button>
+                                                                <button class="btn btn-sm btn-success">Edit</button>
+    
+                                                            </td>
+                                                        </tr>
+                                                    <tr>
+                                                        <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                        <td>lorem ipsum</td>
+                                                        <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                        <td>Expired</td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-primary mr-2">View</button>
+                                                            <button class="btn btn-sm btn-success">Edit</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                            <td>lorem ipsum</td>
+                                                            <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                            <td>Expired</td>
+                                                            <td>
+                                                                <button class="btn btn-sm btn-primary mr-2">View</button>
+                                                                <button class="btn btn-sm btn-success">Edit</button>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <th scope="row" class="font-weight-light">28/06/2018</th>
+                                                                <td>lorem ipsum</td>
+                                                                <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                                <td>Expired</td>
+                                                                <td>
+                                                                    <button class="btn btn-sm btn-primary mr-2">View</button>
+                                                                    <button class="btn btn-sm btn-success">Edit</button>
+                                                                </td>
+                                                            </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="add-tab">
+                                    add tab
+                                </div>
+                                <div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="Status-tab">status
+                                    tab</div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="cuser" role="tabpanel">.cuser..</div>
+                        <div class="tab-pane fade" id="skillset" role="tabpanel">.skill..</div>
+                        <div class="tab-pane fade" id="Businessunit" role="tabpanel">.bunut..</div>
+                        <div class="tab-pane fade" id="userrolls" role="tabpanel">..roll.</div>
+                        <div class="tab-pane fade" id="channel" role="tabpanel">..channel.</div>
+                        <div class="tab-pane fade" id="mynews" role="tabpanel">..mynews.</div>
+                        <div class="tab-pane fade" id="vuser" role="tabpanel">..vuser.</div>
+                        <div class="tab-pane fade" id="mynotification" role="tabpanel">..mynotification.</div>
+                        <div class="tab-pane fade" id="managenotification" role="tabpanel">..managenotification.</div>
+                    </div>
+                
+           
+    
+    <section>
+        <div class="pagination float-right mt-4 mr-4">
+
+            <p>page  <span class="current btn btn-sm"> 1 </span>  of 5</p>
+            <ul class="pager pl-2">
+                <li><a href="#"><i class="fa fa-caret-left " aria-hidden="true"> </i></a></li>
+                <li><a href="#"><i class="fa fa-caret-right " aria-hidden="true"></i></a></li>
+            </ul>
+
+        </div>
+
+    </section>
+</section>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

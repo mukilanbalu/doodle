@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sats Admin</title>
+    <!-- External links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- internal links -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="fluid-container ">
+        <div class="row mr-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+                              </a>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item ">
+                              <a class="nav-link" href="#">    
+                                 <h3>Admin</h3>
+                                <p>News & Events / Management Events</p>
+                                </a>
+                            </li>
+                             <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="notification-number">
+                                            5</div>
+                                        <i class="fa fa-bell mr-2"></i>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Notification 1</a>
+                                <a class="dropdown-item" href="#">Notification 2</a>
+                                <a class="dropdown-item" href="#">Notification 3</a>
+                              </div>
+                            </li>
+                            <li class="nav-item ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         
+                    <div class="user-info d-flex mt-3">
+                            <div class="notification-wrap"></div>
+                                <p> sim siang ju </p>
+                                <img class="rounded-circle profile-img ml-1 dropdown-toggle" src="./img/Profile.png" alt="sim siang ju">
+                            </div>
+    
+                        </div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="#">Notification 1</a>
+                                      <a class="dropdown-item" href="#">Notification 2</a>
+                                      <a class="dropdown-item" href="#">Notification 3</a>
+                                    </div>
+                                  </li>
+
+                          </ul>
+                        </div>
+                      </nav>
+
+
+
+            <div class="col-lg-12 d-flex header-content pr-0 ">
+               
+                <div class="title col-lg-8 mt-2">
+               
+                    
+                </div>
+                <div class="notifications col-lg-2">
+
+                </div>
+
+            </div>
+        </div>
+        <section class="page-body">
+            <div class="row  mx-0">
+                <div class=" col-lg-2 side-menu admin-header px-0">
+                    <h6 class="side-title "> ADMIN </h6>
+
+                    <ul class="  side-sub my-3 ">
+                        <li class=" side-sub-title"> <i class="fa fa-user mr-2"></i> USERS </li>
+                        <li> View Users</li>
+                        <li> create users</li>
+                    </ul>
+
+                    <ul class="side-sub my-3 ">
+                        <li class="side-sub-title"><i class="fa fa-cog"></i> SYSTEM SETTINGS </li>
+                        <li> skill set</li>
+                        <li> Business unit </li>
+                        <li> user rolls </li>
+                        <li> Channels </li>
+                    </ul>
+
+                    <h6 class="side-title"> COMMUNITCATION </h6>
+
+                    <ul class="side-sub my-3 ">
+                        <li class="side-sub-title"> <i class="fa fa-volume-up"></i> NEWS & EVENTS </li>
+                        <li>MY NEWS & EVENTS</li>
+                        <li> MAHANGE NEWS</li>
+                        <li class="active-menu">manage events</li>
+                    </ul>
+
+                    <ul class="side-sub my-3 ">
+                        <li class="side-sub-title"><i class="fa fa-bell mr-2"></i> notifications </li>
+                        <li> my notifications</li>
+                        <li> manage notifications </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-10 page-content ">
+
+                    <div class="mt-2 text-center bg-light">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab"
+                                    aria-controls="overview" aria-selected="true">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="add-tab" data-toggle="tab" href="#add" role="tab" aria-controls="add"
+                                    aria-selected="false">Add </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="status-tab" data-toggle="tab" href="#status" role="tab"
+                                    aria-controls="status" aria-selected="false">status</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+
+                        <form class="form-inline  my-lg-0 d-flex py-4">
+                            <div class="form-group has-search flex-grow-1">
+                                <input type="text" class="form-control search " placeholder="Search">
+                                <span class="fa fa-search "></span>
+                            </div>
+                            <div class="channel d-flex px-2">
+                                <label for="selectchannel " class="mr-2">select channel</label>
+                                <div class="input-group">
+                                    <select class="custom-select" id="">
+                                        <option selected>STATS EVETNS</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="status d-flex">
+                                <label for="Status" class="mr-2">Status</label>
+                                <select class="custom-select " id="">
+                                    <option selected>All</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <div class="events-tab ">
+                        <p>Events</p>
+                    </div>
+
+                    
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="card-body" id="overview">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Publish date</th>
+                                                <th scope="col">Events title</th>
+                                                <th scope="col">Author Information</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">20/06/12</th>
+                                                <td>lorem ipsum</td>
+                                                <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                <td>published</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-primary">View</button>
+                                                    <button class="btn btn-sm btn-success">Edit</button>
+
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">20/06/12</th>
+                                                <td> <span class="draft">{Draft}</span>
+                                                    lorem ipsum</td>
+                                                <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                <td>published</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-primary">View</button>
+                                                    <button class="btn btn-sm btn-success">Edit</button>
+
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">20/06/12</th>
+                                                <td>lorem ipsum</td>
+                                                <td>Sim Siang ju <span class="sats">SATS>APS>t1/t3</span></td>
+                                                <td>published</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-primary">View</button>
+                                                    <button class="btn btn-sm btn-success">Edit</button>
+
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="add-tab">
+                            add tab
+                        </div>
+                        <div class="tab-pane fade" id="status" role="tabpanel" aria-labelledby="Status-tab">status tab</div>
+                    </div>
+
+
+                </div>
+            </div>
+
+    </div>
+    </section>
+    <section>
+      <div class="pagination float-right mr-4">
+           
+        <p>page 1 of 5</p>
+        <ul class="pager pl-2">
+                <li><a href="#"><i class="fa fa-chevron-left text-dark" aria-hidden="true"> </i></a></li>
+                <li><a href="#"><i class="fa fa-chevron-right text-dark" aria-hidden="true"></i></a></li>
+              </ul> 
+
+      </div>
+
+    </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
